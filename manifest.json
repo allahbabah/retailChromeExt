@@ -1,0 +1,20 @@
+{
+    "name": "RetailCRM JS Injector",
+    "version": "1.0",
+    "description": "Добавление ссылок на связаные заказы в RetailCRM для магазина якосметика.рф",
+    "manifest_version": 2,
+    "author": "Alex Derbenew",
+    "background" : {
+      "scripts" : ["background.js"]
+    },
+    "icons": { 
+       "128": "128.png" 
+    },
+    "browser_action": {},
+    "permissions": [
+      "storage",
+      "tabs",
+      "activeTab",
+      "https://yakosmetika.retailcrm.ru/*"],
+    "web_accessible_resources": ["inject.js","link_64x64.png"]
+   }
